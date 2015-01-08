@@ -44,7 +44,7 @@ Main Components
   left: 0;
   height: 25vh;
   width: 100%;
-  background-image: url("/img/img-2-small.jpg");
+  background-image: url("/img/img-1-small.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -52,7 +52,7 @@ Main Components
 }
 .projects-container li::before {
   /* never visible - this is used in jQuery to detect if the background image has been loaded  */
-  content: 'img/img-2-small.jpg';
+  content: 'img/img-1-small.jpg';
   display: none;
 }
 .projects-container li:nth-of-type(2) {
@@ -110,40 +110,40 @@ Main Components
     transition: width 0s;
   }
   .projects-container li:first-of-type::before {
-    content: 'img/img-2-large.jpg';
+    content: 'img/minal-amir-ben.jpg';
   }
   .projects-container li:first-of-type::after {
-    background-image: url("/img/img-2-large.jpg");
+    background-image: url("/img/minal-amir-ben.jpg");
   }
   .projects-container li:nth-of-type(2) {
     top: 0;
     left: 25vw;
   }
   .projects-container li:nth-of-type(2)::before {
-    content: 'img/img-2-large.jpg';
+    content: 'img/amir-eric.jpg';
   }
   .projects-container li:nth-of-type(2)::after {
-    background-image: url("/img/img-2-large.jpg");
+    background-image: url("/img/amir-eric.jpg");
   }
   .projects-container li:nth-of-type(3) {
     top: 0;
     left: 50vw;
   }
   .projects-container li:nth-of-type(3)::before {
-    content: 'img/img-3-large.jpg';
+    content: 'img/minal-rajan.jpg';
   }
   .projects-container li:nth-of-type(3)::after {
-    background-image: url("/img/img-3-large.jpg");
+    background-image: url("/img/minal-rajan.jpg");
   }
   .projects-container li:nth-of-type(4) {
     top: 0;
     left: 75vw;
   }
   .projects-container li:nth-of-type(4)::before {
-    content: 'img/img-4-large.jpg';
+    content: 'img/minal-amir-ben.jpg';
   }
   .projects-container li:nth-of-type(4)::after {
-    background-image: url("/img/img-4-large.jpg");
+    background-image: url("/img/minal-amir-ben.jpg");
   }
   .projects-container li::after {
     height: 100vh;
