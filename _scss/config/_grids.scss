@@ -1,0 +1,21 @@
+// These are really rows and columns
+// Should I just name it that "rows-columns"
+
+.width {  // container__width
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @include breakpoint(lg) {
+    max-width: 960px;
+  }
+}
+
+div[class^="col--"] {
+  float: left;
+}
+
+
+@mixin width($col-size, $col-max) {
+    //padding: 0 1em 1em 0;
+    width: $col-size / $col-max * 100%
+}

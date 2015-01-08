@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+ __           ___                   ___
+|__) |__| \ /  |  |__|  |\/| |__/ |  |
+|  \ |  |  |   |  |  |  |  | |  \ |  |
+-->
+<html>
+
+    {% include header.html %}
+
+  <body class="{{page.bodyclass}}">
+
+    {% include analytics.html %}
+
+    <div class="container  content-transition">
+
+        {{ content }}
+
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+</html>
