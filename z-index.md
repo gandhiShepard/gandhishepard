@@ -2,23 +2,14 @@
 layout: default
 bodyclass: home
 
-seoTitle: RhythmKit - A boilerplate for devs that care about setting type.
-seoDescription: Vertical Rhythm, Element queries and awesomizing
+seoTitle: Gandhi-Shepard - A family of awesomizers
+seoDescription: Benjamin, Minal, Amir and Minal Gandhi-Shepard
 
 featureImg: artwork-013.jpg
 featureStatement: ART WORKS FOR YOU
 
 title:
-subtitle: St. Louis ArtWorks is AWESOME!
-
-unique-cta:
-
-mega-cta-img:
-mega-cta-heading:
-mega-cta-button-text:
-mega-cta-button-text-url:
-
-reveal: programs
+subtitle:
 ---
 {::options parse_block_html="true" /}
 <div class="copy" max-width="600px" style="position: relative;">

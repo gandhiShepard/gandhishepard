@@ -200,7 +200,7 @@ gulp.task('watch', function () {
   gulp.watch([
     //'css/style.css',
     '_config.yml',
-    'index.md',
+    'index.html',
     '_includes/**/*.html',
     '_layouts/*.html',
     '_posts/*.md',
