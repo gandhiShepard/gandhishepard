@@ -1,13 +1,20 @@
 doctype html
-html
+html.no-js(lang="en")
   head
-    meta(charset='utf8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
-    meta(name='description', content='description of your site')
-    meta(name='author', content= "author of the site")
-    title= path
-    link(rel='stylesheet', href='css/master.css')
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title 3D Grid Effect | Demo 1
+    meta(name="description", content="3D Grid Effect: Recreation of the effect seen in the prototype app by Marcus Eckert | Demo 1")
+    meta(name="keywords", content="3d, grid, effect, flip, css transform, perspective, web design")
+    meta(name="author", content="Codrops")
+      
+    link(rel="shortcut icon", href="../favicon.ico")
+    link(rel="stylesheet", type="text/css", href="css/master.css")
+    script(src="js/modernizr.custom.js")
   body
+
     block content
 
-  script(data-main="js/main", src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js")
+    include inc/scripts
+  

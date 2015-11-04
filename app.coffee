@@ -12,7 +12,7 @@ module.exports =
   ]
 
   stylus:
-    use: [axis(), rupture(), autoprefixer()]
+    use: [rupture(), autoprefixer()]
 
   locals:
     marked: marked
