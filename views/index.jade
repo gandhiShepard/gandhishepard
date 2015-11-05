@@ -10,14 +10,14 @@ block content
       .grid-wrap
         .grid
           - for member in members
-            figure
-              img(class='objfit', src= asset(member.fields.photo), alt= member.fields.name)
+            figure(style="background-image:url(http:#{asset(member.fields.photo)});")
+              //-img(class='objfit', src= asset(member.fields.photo), alt= member.fields.name)
 
               
       .content
         - for member in members
           div
-            .mastimg(style="background-image:url(http:#{asset(member.fields.photo)});")
+            .mastimg(style="background-image:url(http:#{asset(member.fields.photo)}); background-color:#CCC;")
             h2= member.fields.name
             div
               != marked(member.fields.bio)

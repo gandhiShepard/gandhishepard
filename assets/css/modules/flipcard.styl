@@ -23,6 +23,8 @@ body
   position relative
   transition all 0.5s cubic-bezier(0,0,0.25,1)
   transform-style preserve-3d
+  display flex
+  flex-wrap wrap
 
   figure
     //margin 10px
@@ -35,12 +37,22 @@ body
     -ms-user-select none
     user-select none
 
+    background-color magenta
+    background-position center center
+    background-size cover
+
+    &:hover
+      background-blend-mode multiply
+
     &.active
       opacity 0
 
     img
       display block
       width 100%
+
+
+
 
   .placeholder
     pointer-events none
@@ -57,8 +69,8 @@ body
 
 .grid figure,
 .grid .placeholder
-  height 49vh
-  width 25%
+  height 50vh
+  width 25vw
 
 .placeholder
   & > div
@@ -168,7 +180,7 @@ body
   background-position center center
   background-repeat none
   background-size cover
-  height 50vh
+  height 100vh
   width 100%
 
 .objfit
