@@ -8,3 +8,5 @@ module.exports =
       ##filters: {}                   # passes filters to the call to contentful's API, see contentful's docs for more info
       template: 'views/_member.jade'  # if present a single page view will be created for each entry in the content type
       path: (entry) -> "member/#{entry.slug}"             # override function for generating single page file path, passed in the entry object
+    homepage:
+      id: '49krtfxaqc8qkSkqwuIUqI'

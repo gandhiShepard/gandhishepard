@@ -2,100 +2,40 @@ extends layout
 
 block content
   
-  //- h3 Welcome to roots!
-  //- :markdown
-    Find tutorials and documentation at http://roots.cx : )
-
-  // Once you've added a content type and posts into Contentful
-  // go update your app.coffee config and then test out iterating
-  // over your content type here!
-
-  //- ul
-  //-   - for member in contentful.familymember
-  //-     li
-  //-       h4: a(href= member._url)= member.name
-  //-       p= member.date
-
+  - var members = contentful.homepage[0].addFamilyMembers
+  
   .container
-    header.codrops-header
-      h1 Gandhi-Shepard
 
     section#grid3d.grid3d.vertical
       .grid-wrap
         .grid
-          figure
-            img(src="img/1.jpg", alt="img01")
-          figure
-            img(src="img/5.jpg", alt="img05")
-          figure
-            img(src="img/8.jpg", alt="img08")
-          figure
-            img(src="img/2.jpg", alt="img02")
-          figure
-            img(src="img/4.jpg", alt="img04")
-          figure
-            img(src="img/3.jpg", alt="img03")
-          figure
-            img(src="img/9.jpg", alt="img09")
-          figure
-            img(src="img/6.jpg", alt="img06")
-          figure
-            img(src="img/7.jpg", alt="img07")
+          - for member in members
+            figure
+              img(class='objfit', src= asset(member.fields.photo), alt= member.fields.name)
 
+              
       .content
-        div
-          .dummy-img
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-        div
-          .dummy-img
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-        div
-          .dummy-img
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-        div
-          .dummy-img
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-        div
-          .dummy-img
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-        div
-          .dummy-img
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-        div
-          .dummy-img
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-        div
-          .dummy-img
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-        div
-          .dummy-img
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
-          p.dummy-text
-            | The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
+        - for member in members
+          div
+            .mastimg(style="background-image:url(http:#{asset(member.fields.photo)});")
+            h2= member.fields.name
+            div
+              != marked(member.fields.bio)
+              
+            - if (member.fields.facebook)
+              a(href= member.fields.facebook) Facebook
+              
+            - if (member.fields.twitter)
+              a(href= member.fields.twitter) Twitter
+              
+            - if (member.fields.instagram)
+              a(href= member.fields.instagram) Instagram
+              
+            - if (member.fields.Github)
+              a(href= member.fields.facebook) Github
+              
+            - if (member.fields.px)
+              a(href= member.fields.px) 500px
+            
         span.loading
         span.icon.close-content

@@ -8,15 +8,6 @@
   font-weight normal
   font-style normal
 
-@font-face
-  font-family 'Blokk'
-  src url('../fonts/blokk/BLOKKRegular.eot')
-  src url('../fonts/blokk/BLOKKRegular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/blokk/BLOKKRegular.woff') format('woff'),
-		 url('../fonts/blokk/BLOKKRegular.svg#BLOKKRegular') format('svg')
-  font-weight normal
-  font-style normal
-
 body
   position relative
 
@@ -24,11 +15,9 @@ body
   overflow hidden
 
 .grid-wrap
-  margin 10px auto 0
-  //max-width 1090px
-  width 100%
   padding 0
   perspective 1500px
+  width 100%
 
 .grid
   position relative
@@ -62,13 +51,14 @@ body
 .view-full
   .grid
     transform translateZ(-1500px)
+
   .placeholder
     transition all 0.5s 0.1s cubic-bezier(0,0,0.25,1)
 
 .grid figure,
 .grid .placeholder
+  height 49vh
   width 25%
-  height 300px
 
 .placeholder
   & > div
@@ -91,11 +81,6 @@ body
   .view-full
     .placeholder
       transform translateZ(1500px) rotateX(-179.9deg)
-
-.horizontal
-  .view-full
-    .placeholder
-      transform translateZ(1500px) rotateY(-179.9deg)
 
 .content,
 .loading
@@ -179,6 +164,17 @@ body
   &:before
     content "\e602"
 
+.mastimg
+  background-position center center
+  background-repeat none
+  background-size cover
+  height 50vh
+  width 100%
+
+.objfit
+  height 50vh
+  object-fit cover
+
 .dummy-img,
 .dummy-text
   max-width 600px
@@ -190,9 +186,6 @@ body
 .vertical .dummy-text
   transform translateY(100px)
 
-.horizontal .dummy-img,
-.horizontal .dummy-text
-  transform translateX(-100px)
 
 .content > div.show .dummy-img,
 .content > div.show .dummy-text
@@ -201,10 +194,6 @@ body
 .vertical .content > div.show .dummy-img,
 .vertical .content > div.show .dummy-text
   transform translateY(0)
-
-.horizontal .content > div.show .dummy-img,
-.horizontal .content > div.show .dummy-text
-  transform translateX(0)
 
 p
   &.dummy-text
